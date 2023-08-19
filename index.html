@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+ <body>
+    <div class="container">
+      <h1>To-Do List</h1>
+      <div class="input-container">
+        <input type="text" id="taskInput" placeholder="Enter task..." />
+        <input type="date" id="deadlineInput" placeholder="" />
+
+        <button id="addButton">Add</button>
+      </div>
+      <div class="todo-list" id="todoList">
+        High Priority Tasks:
+        <div id="highPriorityContainer">
+          <div class="todo-item">
+           <input type="checkbox" />
+           <label>task 2</label
+           ><button class="delete-button" data-index="1">Delete</button>
+          </div>
+        </div>
+
+        Low Priority Tasks:
+        <div id="lowPriorityContainer">
+          <div class="todo-item">
+            <input type="checkbox" />
+            <label>Task 1</label>
+            <button class="delete-button" data-index="0">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
